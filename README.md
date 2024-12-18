@@ -1,7 +1,8 @@
 # Human Activity Recognition from Wearable Sensor Data Using Self-Attention
 
 Pytorch implementation of "Human Activity Recognition from Wearable Sensor Data Using Self-Attention",
-[24th European Conference on Artificial Intelligence, ECAI 2020](https://digital.ecai2020.eu/). 
+[24th European Conference on Artificial Intelligence, ECAI 2020](https://digital.ecai2020.eu/) by Saif Mahmud, M Tanjid Hasan Tonmoy, [Kishor Kumar Bhaumik](https://kishor-bhaumik.github.io/), A K M Mahbubur Rahman, and M Ashraful Amin, Mohammad Shoyaib,
+Muhammad Asif Hossain Khan and Amin Ahsan Ali
 
 [ [arXiV](https://arxiv.org/abs/2003.09018) ] [ [IOS Press](https://ebooks.iospress.nl/publication/55031) ]
 
@@ -22,7 +23,7 @@ Here, the name of dataset in command line argument `DATASET` of this project wil
 For example, to download `PAMAP2` dataset and unzip under `data` directory, run the following command from project root:
 
 ```shell
-python dataset_download.py --dataset pamap2 --unzip
+python dataset_download.py --dataset opp --unzip
 ```
 
 ## Pretrained Models
@@ -39,7 +40,7 @@ For example, in order to train model for `75` epochs on `PAMAP2` dataset and eva
 following command:
 
 ```shell
-python main.py --epochs 75 --dataset pamap2
+python main.py --epochs 75 --dataset opp
 ```
 
 ## Citation
