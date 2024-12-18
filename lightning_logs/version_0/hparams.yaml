@@ -1,0 +1,6 @@
+d_model: 128
+input_size: 18
+lr: 0.001
+num_classes: 12
+rate: 0.2
+seq_len: 33
