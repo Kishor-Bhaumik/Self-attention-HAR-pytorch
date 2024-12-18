@@ -1,18 +1,10 @@
 # Human Activity Recognition from Wearable Sensor Data Using Self-Attention
 
-Tensorflow 2.x implementation of "Human Activity Recognition from Wearable Sensor Data Using Self-Attention",
-[24th European Conference on Artificial Intelligence, ECAI 2020](https://digital.ecai2020.eu/)
-by [Saif Mahmud](https://saif-mahmud.github.io/) and M. Tanjid Hasan Tonmoy et al.
+Pytorch implementation of "Human Activity Recognition from Wearable Sensor Data Using Self-Attention",
+[24th European Conference on Artificial Intelligence, ECAI 2020](https://digital.ecai2020.eu/). 
 
 [ [arXiV](https://arxiv.org/abs/2003.09018) ] [ [IOS Press](https://ebooks.iospress.nl/publication/55031) ]
 
-## Installation
-
-To install the dependencies in `python3` environment, run:
-
-```shell
-pip install -r requirements.txt
-```
 
 ## Dataset Download
 
@@ -43,23 +35,11 @@ These models can be used directly for inference and performance evaluation as de
 Python script `main.py` will be used for model training, inference and performance evaluation. The arguments for this
 script are as follows:
 
-    -h, --help         show this help message and exit 
-    --train            Training Mode 
-    --test             (Testing / Evaluation) Mode
-    --epochs EPOCHS    Number of Epochs for Training
-    --dataset DATASET  Name of Dataset for Model Training or Inference
-
 For example, in order to train model for `75` epochs on `PAMAP2` dataset and evaluate model performance, run the
 following command:
 
 ```shell
-TF_CPP_MIN_LOG_LEVEL=3 python main.py --train --test --epochs 75 --dataset pamap2
-```
-
-If the pretrained weights are stored in `saved_model` directory and to infer with that, run the following command:
-
-```shell
-TF_CPP_MIN_LOG_LEVEL=3 python main.py --test --dataset pamap2
+python main.py --epochs 75 --dataset pamap2
 ```
 
 ## Citation
